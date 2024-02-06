@@ -137,7 +137,43 @@ address {
 }
 
 .overlay {
+    background-color: #000000;
     opacity: 0.6;
     width: 100%;
     height: 100%;
+}
+
+.cover__title {
+    padding-left: 50px;
+    padding-top: 165px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 115px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.aligned-text {
+    display: block;
+}
+
+.aligned-text_center {
+    display: block;
+    text-align: center;
+}  
+
+.aligned-text_right {
+    display: block;
+    text-align: right;
+}
+
+.letter-spacing-extended {
+    letter-spacing: 30px;
+}
+
+.no-letter-spacing {
+    letter-spacing: normal;
+    margin: 8px;
 }
