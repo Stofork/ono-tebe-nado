@@ -67,69 +67,13 @@ address {
     border-bottom: 1px solid black;
 }
 
-/* ---------------jambotron---------------- */
-
-/* .cover {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    background-image: url(/images/cover.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 757px;
-}
-
-.accent-span{
-    display: block;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.cover__title {
-    grid-area: 1/1 / 2/3;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 100px;
-    line-height: 125px;
-    letter-spacing: 0.5em;
-    color: #FFFFFF;
-}
-
-.cover__text {
-    margin: auto;
-    grid-area: 2/1 / 3/2;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 28px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.cover__bet {
-    margin: auto;
-    grid-area: 2/2 / 3/3;
-}
-
-.cover__bet-link {
-    color: #FFFFFF;
-    text-decoration: none;
-    text-transform: uppercase;
-    border: 1px solid #FFFFFF;
-    letter-spacing: 0.1em;
-} */
-
 /* ----------------cover---------------- */
 
 .cover {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
     background-image: url(/images/cover.jpg);
     background-size: cover;
     background-position: center;
@@ -137,6 +81,8 @@ address {
 }
 
 .overlay {
+    position: absolute;
+    z-index: 0;
     background-color: #000000;
     opacity: 0.6;
     width: 100%;
@@ -144,13 +90,16 @@ address {
 }
 
 .cover__title {
+    position: relative;
+    z-index: 1;
     padding-left: 50px;
-    padding-top: 165px;
+    padding-top: 160px;
+    margin-right: 20px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 100px;
-    line-height: 115px;
+    line-height: 125px;
     color: #FFFFFF;
     text-transform: uppercase;
 }
@@ -162,6 +111,7 @@ address {
 .aligned-text_center {
     display: block;
     text-align: center;
+    margin-right: 60px;
 }  
 
 .aligned-text_right {
@@ -175,5 +125,64 @@ address {
 
 .no-letter-spacing {
     letter-spacing: normal;
-    margin: 8px;
+    margin-right: 32px;
+}
+
+.cover__description {
+    position: relative;
+    display: flex;
+    padding: 20px 50px 20px 70px;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.cover__description-text {
+    padding-left: 10px;
+    word-spacing: 18px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.bet-button {
+    padding: 11px 31px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* -------------------------lots--------------------- */
+
+.lots {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 200px 25px;
+}
+
+.lots__card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card_type_film {
+    background-image: url(/images/card-lot-01.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 334px;
+    height: 563px;
 }
