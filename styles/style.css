@@ -255,7 +255,6 @@ address {
     text-decoration-style: solid;
     text-underline-offset: 3px;
     text-decoration-thickness: 1px;
-    /* or 26px */
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -268,7 +267,6 @@ address {
     font-weight: 400;
     font-size: 20px;
     line-height: 120%;
-    /* or 24px */
     color: #FFFFFF;
 }
 
@@ -317,7 +315,6 @@ address {
     font-weight: 700;
     font-size: 40px;
     line-height: 47px;
-    /* identical to box height */
     text-transform: uppercase;
     color: #000000;
 }
@@ -330,7 +327,6 @@ address {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    /* or 120% */
     letter-spacing: 0.01em;
     color: #000000;
 }
