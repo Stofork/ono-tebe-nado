@@ -4,41 +4,44 @@ address {
     font-style: normal
 }
 
+.underline_style {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+.text_style {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    color: #000000;
+}
+
 /* -----------------------header------------------------ */
 
 .header {
     display: flex;
-    padding: 94px 50px;
+    padding: 86px 50px;
     justify-content: space-between;
     align-items: center;
 }
 
 .header__menu {
-    margin-right: 36px;
+    margin-right: 40px;
 }
 
 .header__list {
     list-style-type: circle;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
     font-size: 18px;
     line-height: 25px;
-    color: #000000;
+    letter-spacing: 0.01em;
 }
 
 .header__menu-list {
     display: flex;
     flex-direction: row;
-    gap: 34px;
-    list-style-type: circle;
-}
-
-.header__links-list-item .header__link {
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 5px;
+    gap: 32px;
 }
 
 .header__links-list-item_no-bullit {
@@ -47,32 +50,36 @@ address {
 
 .header__link_active .header__link {
     text-decoration: none;
-    border-bottom: none;
 }
 
 .header__logo {
     margin-right: auto;
-    width: 148px;
-    height: 105px;
+    width: 138px;
+    height: 120px;
 }
 
 .header__logo-image {
-    padding: 0 6px 6px 6px;
+    padding-top: 6px;
 }
 
 .header__contacts-list {
     max-width: 240px;
     list-style-type: none;
-}
-
-.header__contacts-item .header__link {
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 5px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
 }
 
 /* ----------------cover---------------- */
+
+.text_style_cover {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
 
 .cover {
     position: relative;
@@ -95,42 +102,39 @@ address {
 }
 
 .cover__title {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     z-index: 1;
-    padding-left: 50px;
-    padding-top: 160px;
-    margin-right: 20px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 100px;
-    line-height: 125px;
-    color: #FFFFFF;
-    text-transform: uppercase;
+    padding: 165px 15px 16px 50px;
 }
 
 .aligned-text {
     display: block;
+    line-height: 115px;
 }
 
 .aligned-text_center {
     display: block;
     text-align: center;
-    margin-right: 60px;
+    line-height: 100px;
+    padding-right: 60px;
 }  
 
 .aligned-text_right {
     display: block;
     text-align: right;
+    line-height: 100px;
 }
 
 .letter-spacing-extended {
-    letter-spacing: 30px;
+    padding-right: 5px;
+    letter-spacing: 0.3em;
 }
 
 .no-letter-spacing {
+    margin-right: 35px;
     letter-spacing: normal;
-    margin-right: 32px;
 }
 
 .cover__description {
@@ -171,17 +175,20 @@ address {
 
 /* -------------------------lots--------------------- */
 
+.text_style_lots { 
+    font-family: 'Raleway';
+    font-style: normal;
+}
+
 .lots {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 140px 24px;
+    padding: 142px 24px;
 }
 
 .lots__heading {
     padding: 40px 40px 25px 40px;
-    font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 47px;
@@ -248,10 +255,6 @@ address {
     font-weight: 700;
     font-size: 22px;
     line-height: 120%;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-underline-offset: 3px;
-    text-decoration-thickness: 1px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -259,8 +262,6 @@ address {
 .card__text {
     position: relative;
     z-index: 1;
-    font-family: 'Raleway';
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 120%;
@@ -269,16 +270,8 @@ address {
 
 .lots__look-more-link {
     padding: 32px 40px 25px 40px;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-underline-offset: 5px;
-    text-decoration-thickness: 1px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 23px;
-    color: #000000;
 }
 
 /* ------------------------about----------------------------- */
@@ -287,7 +280,7 @@ address {
     display: flex;
     flex-direction: row;
     gap: 72px;
-    padding: 20px 40px;
+    padding: 14px 20px 95px 71px;
 }
 
 .about__logo {
@@ -306,7 +299,7 @@ address {
 }
 
 .about__title {
-    padding: 98px 0;
+    padding: 100px 0;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -319,44 +312,29 @@ address {
 .about__text {
     display: flex;
     flex-direction: column;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.01em;
-    color: #000000;
 }
 
 .about__text-one {
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 
 /* ------------------------footer--------------------------- */
 
 .footer {
     display: flex;
-    padding: 94px 50px;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    padding: 86px 50px;
 }
 
 .footer__menu-list {
     list-style-type: none;
     text-align: center;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: #000000;
-}
-
-.footer__menu-list .footer__menu-link {
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 5px;
 }
 
 .footer__menu-link_active .footer__menu-link {
@@ -366,7 +344,7 @@ address {
 .footer__social-list {
     display: flex;
     list-style-type: none;
-    gap: 50px;
+    gap: 48px;
 }
 
 .footer__social-icon {
