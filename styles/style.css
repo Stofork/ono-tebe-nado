@@ -86,7 +86,7 @@ address {
     display: flex;
     flex-direction: column;
     gap: 100px;
-    background-image: url(./images/cover.jpg);
+    background-image: url(../images/cover.jpg);
     background-size: cover;
     background-position: center;
     height: 757px;
