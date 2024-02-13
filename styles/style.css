@@ -1,9 +1,5 @@
 /* место для вашего кода */
 
-address {
-    font-style: normal
-}
-
 .underline_style {
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -42,6 +38,13 @@ address {
     display: flex;
     flex-direction: row;
     gap: 32px;
+}
+
+.header__link {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
 }
 
 .header__links-list-item_no-bullit {
