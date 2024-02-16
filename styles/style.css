@@ -309,6 +309,7 @@
 .about__text {
     display: flex;
     flex-direction: column;
+    gap: 25px;
     font-family: 'Raleway', 'Gill Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -316,10 +317,6 @@
     line-height: 24px;
     letter-spacing: 0.01em;
     color: #000000;
-}
-
-.about__text-one {
-    padding-bottom: 25px;
 }
 
 /* ------------------------footer--------------------------- */
@@ -344,7 +341,7 @@
     color: #000000;
 }
 
-.footer__menu-link_active .footer__menu-link {
+.footer__menu-link_active {
     text-decoration: none;
 }
 
